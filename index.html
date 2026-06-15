@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ZenGrade - Welcome</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;700&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Icons -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-fixed-variant": "#444749",
+                    "surface-container-lowest": "#ffffff",
+                    "on-tertiary-fixed": "#191c1e",
+                    "surface-container-high": "#dce9ff",
+                    "on-primary": "#ffffff",
+                    "inverse-on-surface": "#eaf1ff",
+                    "surface": "#f8f9ff",
+                    "secondary-fixed-dim": "#b9c8d7",
+                    "secondary-fixed": "#d5e4f3",
+                    "primary-container": "#70b8ff",
+                    "on-secondary-fixed": "#0f1d28",
+                    "tertiary-fixed": "#e0e3e5",
+                    "error-container": "#ffdad6",
+                    "tertiary-fixed-dim": "#c4c7c9",
+                    "secondary-container": "#d5e4f3",
+                    "secondary": "#52606c",
+                    "on-tertiary-container": "#424547",
+                    "outline-variant": "#c0c7d2",
+                    "on-primary-fixed": "#001d34",
+                    "inverse-primary": "#9bcbff",
+                    "inverse-surface": "#233144",
+                    "primary-fixed-dim": "#9bcbff",
+                    "surface-variant": "#d5e3fc",
+                    "surface-container-low": "#eff4ff",
+                    "on-tertiary": "#ffffff",
+                    "on-secondary": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "on-background": "#0d1c2e",
+                    "primary-fixed": "#d0e4ff",
+                    "on-secondary-container": "#586673",
+                    "tertiary": "#5c5f61",
+                    "surface-bright": "#f8f9ff",
+                    "on-error": "#ffffff",
+                    "surface-container-highest": "#d5e3fc",
+                    "tertiary-container": "#b0b3b5",
+                    "on-primary-container": "#004877",
+                    "on-surface": "#0d1c2e",
+                    "error": "#ba1a1a",
+                    "surface-container": "#e6eeff",
+                    "primary": "#0062a0",
+                    "on-primary-fixed-variant": "#004a7a",
+                    "on-surface-variant": "#404750",
+                    "surface-tint": "#0062a0",
+                    "surface-dim": "#ccdbf3",
+                    "on-secondary-fixed-variant": "#3a4854",
+                    "outline": "#717881",
+                    "background": "#f8f9ff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "container-padding": "24px",
+                    "stack-gap": "12px",
+                    "unit": "8px",
+                    "gutter": "16px",
+                    "section-gap": "40px"
+            },
+            "fontFamily": {
+                    "headline-md": ["Manrope"],
+                    "display-lg-mobile": ["Manrope"],
+                    "body-md": ["Hanken Grotesk"],
+                    "label-caps": ["Hanken Grotesk"],
+                    "display-lg": ["Manrope"],
+                    "body-lg": ["Hanken Grotesk"]
+            },
+            "fontSize": {
+                    "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                    "display-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "700"}],
+                    "display-lg": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background: radial-gradient(circle at top right, #e6eeff 0%, #f8f9ff 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(112, 184, 255, 0.1);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="text-on-background">
+<!-- Top Navigation Bar (Suppressed items, minimal brand presence for welcome screen) -->
+<header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md flex justify-between items-center px-container-padding h-16 shadow-[0_10px_30px_rgba(112,184,255,0.1)]">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary" data-icon="cloud">cloud</span>
+<span class="font-headline-md text-headline-md font-bold text-primary">ZenGrade</span>
+</div>
+<button class="material-symbols-outlined text-secondary hover:opacity-80 transition-opacity active:scale-95" data-icon="account_circle">account_circle</button>
+</header>
+<main class="flex-grow flex items-center justify-center pt-16 px-container-padding">
+<div class="max-w-[600px] w-full text-center space-y-section-gap">
+<!-- Atmospheric Visual -->
+<div class="relative h-64 md:h-80 flex items-center justify-center overflow-visible">
+<div class="absolute inset-0 bg-primary-container/20 blur-[100px] rounded-full animate-pulse"></div>
+<div class="glass-card w-48 h-48 rounded-full flex items-center justify-center shadow-[0_20px_50px_rgba(112,184,255,0.2)] animate-float border-2 border-primary/10">
+<span class="material-symbols-outlined text-[80px] text-primary" data-icon="calculate" data-weight="fill" style="font-variation-settings: 'FILL' 1;">calculate</span>
+</div>
+<!-- Floating chips for visual flair -->
+<div class="absolute top-0 right-10 glass-card px-4 py-2 rounded-full shadow-sm animate-float [animation-delay:1s]">
+<span class="font-label-caps text-label-caps text-primary">GPA 4.0</span>
+</div>
+<div class="absolute bottom-10 left-0 glass-card px-4 py-2 rounded-full shadow-sm animate-float [animation-delay:2s]">
+<span class="font-label-caps text-label-caps text-secondary">A+ EXCELLENCE</span>
+</div>
+</div>
+<!-- Content Section -->
+<div class="space-y-gutter">
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface tracking-tight">
+                    Welcome to <span class="text-primary">CGPA Calculator</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-[460px] mx-auto">
+                    A calming way to track your academic journey. Transform your grades into a clear, mindful path forward.
+                </p>
+</div>
+<!-- Primary Action -->
+<div class="pt- unit">
+<a class="inline-flex items-center justify-center px-10 h-14 bg-primary text-on-primary font-body-lg font-bold rounded-full shadow-[0_10px_25px_rgba(0,98,160,0.3)] hover:opacity-90 active:scale-95 transition-all duration-200 group" href="#calculate">
+                    Start Calculating
+                    <span class="material-symbols-outlined ml-2 group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+<!-- Aesthetic Features Grid -->
+<div class="grid grid-cols-3 gap-gutter pt-section-gap">
+<div class="space-y-unit">
+<span class="material-symbols-outlined text-primary-container" data-icon="auto_awesome">auto_awesome</span>
+<p class="font-label-caps text-label-caps text-secondary">MINIMALIST</p>
+</div>
+<div class="space-y-unit">
+<span class="material-symbols-outlined text-primary-container" data-icon="history_edu">history_edu</span>
+<p class="font-label-caps text-label-caps text-secondary">TRACKABLE</p>
+</div>
+<div class="space-y-unit">
+<span class="material-symbols-outlined text-primary-container" data-icon="spa">spa</span>
+<p class="font-label-caps text-label-caps text-secondary">CALMING</p>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer - Shared Component -->
+<footer class="w-full py-section-gap flex justify-center items-center mt-auto bg-transparent">
+<div class="text-center space-y-2">
+<p class="font-label-caps text-label-caps text-tertiary">
+                Akash.V-AIDS-"A"
+            </p>
+<div class="flex gap-4 justify-center">
+<span class="w-2 h-2 rounded-full bg-primary-container/40"></span>
+<span class="w-2 h-2 rounded-full bg-primary-container/40"></span>
+<span class="w-2 h-2 rounded-full bg-primary-container/40"></span>
+</div>
+</div>
+</footer>
+<!-- No BottomNavBar for Welcome Screen as per Shell Relevance Check -->
+<script>
+        // Micro-interaction for the start button
+        const startBtn = document.querySelector('a');
+        startBtn.addEventListener('click', (e) => {
+            // Future navigation logic could go here
+            console.log('Journey started...');
+        });
+
+        // Add a subtle parallax effect on mouse move
+        document.addEventListener('mousemove', (e) => {
+            const moveX = (e.clientX - window.innerWidth / 2) * 0.01;
+            const moveY = (e.clientY - window.innerHeight / 2) * 0.01;
+            document.querySelector('.animate-float').parentElement.style.transform = `translate(${moveX}px, ${moveY}px)`;
+        });
+    </script>
+</body></html>
